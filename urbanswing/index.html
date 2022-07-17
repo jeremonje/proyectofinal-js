@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#bla"  />
+    <title>UrbanSwing</title>
+    <link rel="shortcut icon" href="./assets/boxinglogo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="./styles/stylo.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+
+<header class="container-fluid bg-dark position-sticky top-0">
+    <ul
+        class="nav nav-pills mb-3 py-3 containerr"
+        id="pills-tab"
+        role="tablist"
+    >
+        <li class="nav-item text-primary" role="presentation">
+        <a
+            class="nav-link "
+            id="pills-home-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-home"
+            type="button"
+            role="tab"
+            aria-controls="pills-home"
+            aria-selected="true"
+            >Inicio</a
+        >
+        </li>
+        <li class="nav-item" role="presentation">
+        <a
+            class="nav-link active"
+            id="pills-profile-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-profile"
+            type="button"
+            role="tab"
+            aria-controls="pills-profile"
+            aria-selected="false"
+            >Productos</a
+        >
+        </li>
+        <li class="nav-item" role="presentation">
+        <a
+            class="nav-link"
+            id="pills-contact-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-contact"
+            type="button"
+            role="tab"
+            aria-controls="pills-contact"
+            aria-selected="false"
+            >Carrito</a
+        >
+        </li>
+    </ul>
+</header>
+
+    <div class="alert container position-sticky top-0 alert-primary hide" role="alert">
+    Producto Añadido al carrito!
+    </div>
+    <div class="alert container position-sticky top-0 alert-danger remove" role="alert">
+    Producto removido!
+    </div>
+
+
+
+<!-----------------------------------HOME------------------------------------>   
+
+    <div class="tab-content" id="pills-tabContent">
+    <div class="tab-pane fade"id="pills-home"role="tabpanel"aria-labelledby="pills-home-tab">
+    <header>
+        <div class="container">
+            <p class="logo">UrbanSwing</p>        
+        </div>  
+    </header>
+    
+        <section id=nuestros-programas1 >
+            <div class="container"> 
+                <h2>"EL EQUIPO QUE ESTABAS NECESITANDO"</h2>
+                <h4> Bienvenido a Universo Boxeo, tu tienda de boxeo online, donde podrás encontrar la equipación más importante para practicar tu deporte favorito, uno de los más bonitos del mundo, el boxeo.<span id="dots">...</span><span id="more">  <br> Si estás empezando en este maravilloso deporte de contacto, te encantará saber que aquí, disponemos de todo lo que necesitas para practicarlo. <br> Nos esforzamos en traer los mejores productos para nuestros usuarios, testados y probados en nuestro gimnasio con nuestros alumnos.
+        
+                    En Internet hay mucho ruido y puedes encontrar miles de productos de distintas procedencias y diferentes calidades, por lo que decidimos explorar cada tienda online, y así hemos seleccionado los mejores, los más vendidos y mejor valorados, asegurándonos siempre de que tengan una relación calidad precio que merezca la pena</span></h4>
+        
+                <button class="leer-mas" onclick="myFunction()" id="myBtn">Leer Mas</button><br><br>
+        </section>
+        <section id=nuestros-programas >
+        
+            
+        
+    
+    <div class="slideshow-container">
+
+        
+        <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="./assets/gimnasio-gym2.jpg" style="width:100%">
+        
+        </div>
+    
+        <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="./assets/accesorios.jpg" style="width:100%">
+        
+        </div>
+    
+        <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="./assets/boxing-.jpg" style="width:100%">
+        
+        </div>
+    
+    
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    
+    
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    
+    <!-----------------------Pie de pagina (HOME)----------------------->
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-content-container">
+            <h3 class="website-logo">UrbanSwing</h3>
+            <span class="footer-info"><h3>Equipamiento Deportivo de GYM, Boxeo, MMA & Kick Boxing.</h3>
+                <h3>UrbanSwing Equipment te ofrece todo tipo de material deportivo como guantes de boxeo , sacos de boxeo, pesas y mancuernas, prendas deportivas, protecciones bucales, accesorios.</h3></span>
+            <span class="footer-info">UrbanSwing@gmail.com</span>
+        </div>
+        <div class="footer-menus">
+            <div class="footer-content-container">
+                <span class="menu-title">menu</span>
+                <a href="" class="menu-item-footer">home</a>
+                <a href="" class="menu-item-footer">courses</a>
+                
+            </div>
+            <div class="footer-content-container">
+                <span class="menu-title">legal</span>
+                <a href="" class="menu-item-footer">privacy politicy</a>
+                <a href="" class="menu-item-footer">cookies</a>
+                
+            </div>
+            
+        </div>
+        <div class="footer-content-container">
+            <span class="menu-title">follow us</span>
+            <div class="grupo-1">
+                <a href="https://www.instagram.com/urbanswingg/" target="_blank" class="fa fa-instagram"></a>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="copyrigtht-container">
+        <span class="copyrigtht">&copy;2022, UrbanSwing.com.</span>
+    </div>
+</footer>
+
+
+    
+        
+    </div>
+</section>
+
+<!-----------------------------------Productos------------------------------------>   
+
+    <div class="tab-pane fade show active container"id="pills-profile"role="tabpanel"aria-labelledby="pills-profile-tab">
+        <!--<h2 class="h4 m-4 text-primary">Productos</h2>-->
+
+        <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+        
+
+
+        <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-primary">Mancuerna</h5>
+            <img src="./assets/img/Mancuernas2.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text text-white-50 description">Tipo de mancuerna: maciza
+                    Peso: 25 kg
+                    acero + fundicion</p>
+                <h5 class="text-primary">Precio: <span class="precio">$ 4600</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+            </div>
+            </div>
+            </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-primary">Pesa rusa</h5>
+            <img src="./assets/img/pesarusa.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text text-white-50 description">Peso: 7 kg,
+                    Dimensiones:
+                    Ancho 25 cm  <br>
+                    Alto 20 cm</p>
+                <h5 class="text-primary">Precio: <span class="precio">$ 8200</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+            </div>
+            </div>
+            </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-primary">Mochila Head</h5>
+            <img src="./assets/img/mochila.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text text-white-50 description">Tamaño: Talla única
+                    Color: Negro (Head Black).
+                    Tanto para hacer deporte, para el tiempo libre.</p>
+                <h5 class="text-primary">Precio: <span class="precio">$ 2400</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+            </div>
+            </div>
+            </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-primary">Bolso Puma</h5>
+            <img src="./assets/img/bolsadeportiva.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text text-white-50 description">Dispone de dos amplios compartimentos.Material: Nailon 600d
+                    Tamaño: diámetro 32 cm.</p>
+                <h5 class="text-primary">Precio: <span class="precio">$ 3500</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+            </div>
+            </div>
+            </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-primary">Cuerda de Salto</h5>
+            <img src="./assets/img/cuerda.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text text-white-50 description">longitud de la cuerda es de 2,8 m.      <br> Color	Negro mate.</p>
+                <h5 class="text-primary">Precio: <span class="precio">$ 700</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+            </div>
+            </div>
+            </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-primary">Conjunto CR7</h5>
+            <img src="./assets/img/conjuntoazul.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text text-white-50 description">Chándal completo
+                    Color Azzurro Cielo/ Blue
+                    Hecho 100% de poliéster</p>
+                <h5 class="text-primary">Precio: <span class="precio">$ 5999</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+            </div>
+            </div>
+            </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-primary">Conjunto Adidas</h5>
+            <img src="./assets/img/Conjuntorosa.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text text-white-50 description">100% Poliéster Reciclado. <br>Unisex.</p>
+                <h5 class="text-primary">Precio: <span class="precio">$ 6599</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+            </div>
+            </div>
+            </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-primary">Vendas de Boxeo</h5>
+            <img src="./assets/img/vendas.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text text-white-50 description">Algodón elástico para comodidad y fuerza.Tamaño 3,5M.</p>
+                <h5 class="text-primary">Precio: <span class="precio">$ 450</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+            </div>
+            </div>
+            </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-primary">Manopla</h5>
+            <img src="./assets/img/removebg.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text text-white-50 description">Cuenta con la absorción de impactos Tribe.</p>
+                <h5 class="text-primary">Precio: <span class="precio">$ 4999</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+            </div>
+            </div>
+            </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-primary">Protector Bucal</h5>
+            <img src="./assets/img/bucal.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text text-white-50 description">Para todo tipo de deportes. <br> 100% Adaptable .</p>
+                <h5 class="text-primary">Precio: <span class="precio">$ 699</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+            </div>
+            </div>
+            </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-primary">Casco de Boxeo</h5>
+            <img src="./assets/img/casco.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text text-white-50 description">Protección en sus pómulos,su barbilla y sus orejas. <br> Marca; Leone .</p>
+                <h5 class="text-primary">Precio: <span class="precio">$ 5299</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+            </div>
+            </div>
+            </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-primary">Coquilla</h5>
+            <img src="./assets/img/coquilla.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text text-white-50 description">Creado para proporcionar la máxima amortiguación. <br>Marca: Shark.</p>
+                <h5 class="text-primary">Precio: <span class="precio">$ 7999</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+            </div>
+            </div>
+            </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-primary">Guante Everlast</h5>
+            <img src="./assets/img/guantes2.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text text-white-50 description">Talla 10OZ/12OZ. <br> Marca: Everlast.</p>
+                <h5 class="text-primary">Precio: <span class="precio">$ 8200</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+            </div>
+            </div>
+            </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-primary">Guante Shark</h5>
+            <img src="./assets/img/guanteblanconegro.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text text-white-50 description">Talla 10OZ. <br> Marca: Shark.</p>
+                <h5 class="text-primary">Precio: <span class="precio">$ 6500</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+            </div>
+            </div>
+            </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-primary">Guante Charlie</h5>
+            <img src="./assets/img/guantescharli.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text text-white-50 description">Talla 12OZ. <br> Marca: Charlie.</p>
+                <h5 class="text-primary">Precio: <span class="precio">$ 7000</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+            </div>
+            </div>
+            </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-primary">Guante Leone</h5>
+            <img src="./assets/img/guantes.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text text-white-50 description">Talla 10OZ/12OZ. <br> Marca: Leone.</p>
+                <h5 class="text-primary">Precio: <span class="precio">$ 8500</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+            </div>
+            </div>
+            </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-primary">Barra de dominadas</h5>
+            <img src="./assets/img/barradedominadaspng.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text text-white-50 description">Peso: 5 kg, Dimensiones: Ancho 105 cm, Alto 60 cm <br> Profundidad 45,00 cm.</p>
+                <h5 class="text-primary" >Precio: <span class="precio">$ 6800</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+            </div>
+            </div>
+            </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-primary">Media esfera</h5>
+            <img src="./assets/img/mediaesfera.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text text-white-50 description">Con bandas laterales, <br> Se utiliza de ambas caras,  <br>Superficie antideslizante.</p>
+                <h5 class="text-primary">Precio: <span class="precio">$ 9700</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+            </div>
+            </div>
+            </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-primary">Barra Olimpica</h5>
+            <img src="./assets/img/Barra.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text text-white-50 description">Barra para discos,
+                    Peso: 8 kg + discos de 10 kg
+                    Recubrimiento de la barra Acero</p>
+                <h5 class="text-primary">Precio: <span class="precio">$ 8200</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+            </div>
+            </div>
+            </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-primary">Banco de pecho</h5>
+            <img src="./assets/img/bancainclinada.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text text-white-50 description"> 5 posiciones con apoya barra.  <br> El apoya barras se puede sacar y utilizar como sentadillero.</p>
+                <h5 class="text-primary">Precio: <span class="precio">$ 22100</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+            </div>
+            </div>
+            </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-primary">Bolsa de Boxeo Everlast</h5>
+            <img src="./assets/img/Bolsadeboxeo.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text text-white-50 description">Peso 35kg, altura de 1,20. <br> Marca: Everlast</p>
+                <h5 class="text-primary" >Precio: <span class="precio">$ 11100</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+            </div>
+            </div>
+            </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-primary">Bolsa de Boxeo Everlast (camuflada)</h5>
+            <img src="./assets/img/bolsacamuflada1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text text-white-50 description">Peso 20kg, altura de 1,20.  <br> Marca: Everlast.</p>
+                <h5 class="text-primary">Precio: <span class="precio">$ 13100</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+            </div>
+            </div>
+            </div>
+        </div>
+    
+
+        </div>
+    
+    <section class = "products">
+        <div class = "container">
+        <h2>Los Más Vendidos</h2>
+        <div class = "product-list">
+        
+            <!-- <div class = "product-item">
+            <div class = "product-img">
+                <img src = "images/bed.png" alt = "product image">
+            </div>
+
+            <div class = "product-content">
+                <h3 class = "product-nombre">Wooden Bed</h3>
+                <span class = "product-categoria">Bed</span>
+                <p class = "product-precio">$120.00</p>
+            </div>
+            </div> -->
+        
+        </div>
+        </div>
+    </section>
+    
+
+
+    <footer>
+        <div class = "footer-banner">
+        <div class = "container">
+            <h2>Proximamente más productos deportivos</h2>
+            <hr>
+            
+            <span class="copyrigtht">&copy;2022, UrbanSwing.com.</span>
+        </div>
+        </div>
+    </footer>  
+
+
+    </div>
+    <div
+        class="tab-pane fade carrito"
+        id="pills-contact"
+        role="tabpanel"
+        aria-labelledby="pills-contact-tab"
+    >
+    <br>
+    <table class="table table-dark table-hover">
+        <thead>
+        <tr class="text-primary">
+            <th scope="col">#</th>
+            <th scope="col">Productos</th>
+            <th scope="col">Precio</th>
+            <th scope="col">Cantidad</th>
+        </tr>
+        </thead>
+        <tbody class="tbody">
+        
+        
+        
+        </tbody>
+    </table>
+    <br><br>
+    <div class="row mx-4">
+        <div class="col">
+        <h3 class="itemCartTotal text-white">Total: 0</h3>
+        <hr>
+        Porfavor complete el siguiente formulario para realizar la compra.
+        <hr>
+        </div>
+        
+        <div class="col d-flex justify-content-end">
+        <!--<button class="btn btn-success">COMPRAR</button>-->
+
+        </div>
+    </div>
+    
+    <main>
+		<form action="" class="formulario" id="formulario">
+
+			<!-- Grupo: Nombre -->
+			<div class="formulario__grupo" id="grupo__nombre">
+				<label for="nombre" class="formulario__label">Nombre</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="John Doe">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+			</div>
+
+
+			<!-- Grupo: Correo Electronico -->
+			<div class="formulario__grupo" id="grupo__correo">
+				<label for="correo" class="formulario__label">Correo Electrónico</label>
+				<div class="formulario__grupo-input">
+					<input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+			</div>
+
+			<!-- Grupo: Teléfono -->
+			<div class="formulario__grupo" id="grupo__telefono">
+				<label for="telefono" class="formulario__label">Teléfono</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="4491234567">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 14 dígitos.</p>
+			</div>
+
+			<!-- Grupo: Terminos y Condiciones -->
+			<div class="formulario__grupo" id="grupo__terminos">
+				<label class="formulario__label">
+					<input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+					Acepto los Terminos y Condiciones
+				</label>
+			</div>
+
+			<div class="formulario__mensaje" id="formulario__mensaje">
+				<p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+			</div>
+
+			<div class="formulario__grupo formulario__grupo-btn-enviar">
+				<button type="submit" class="formulario__btn">Finalizar Pedido</button>
+				<p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Muchas Gracias por su compra! le estaremos enviando por su gmail los pasos a seguir.</p>
+			</div>
+		</form>
+	</main>
+
+    </div>
+    </div>
+
+
+    <script src="./scripts/script.js"></script>
+    <script src="./scripts/mostrarimg.js"></script>
+    <script src="https://kit.fontawesome.com/70fd5e0236.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+[
+    {
+        "nombre" : "Guante",
+        "categoria" : "Everlast",
+        "precio" : "8200",
+        "imgSrc" : "./assets/img/guantes2.png"
+    },
+    {
+        "nombre" : "Mochila",
+        "categoria" : "Head",
+        "precio" : "2400",
+        "imgSrc" : "./assets/img/mochila.png"
+    },
+    {
+        "nombre" : "Mancuerna",
+        "categoria" : "25 kg",
+        "precio" : "4600",
+        "imgSrc" : "./assets/img/Mancuernas2.png"
+    },
+    {
+        "nombre" : "Guante",
+        "categoria" : "Shark",
+        "precio" : "6500",
+        "imgSrc" : "./assets/img/guanteblanconegro.png"
+    }
+]
